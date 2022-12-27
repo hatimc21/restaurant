@@ -18,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { ZonesComponent } from './zones/zones.component';
+import { SpecialiteComponent } from './specialite/specialite.component';
+import { SerieComponent } from './serie/serie.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ZonesComponent } from './zones/zones.component';
     NearbyComponent,
     CitiesComponent,
     ZonesComponent,
+    SpecialiteComponent,
+    SerieComponent,
   ],
   imports: [
     CommonModule,

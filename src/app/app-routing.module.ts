@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { NearbyComponent } from './nearby/nearby.component';
 import { CitiesComponent } from './cities/cities.component';
 import { ZonesComponent } from './zones/zones.component';
+import { SpecialiteComponent } from './specialite/specialite.component';
+import { SerieComponent } from './serie/serie.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'nearby', component: NearbyComponent},
   {path: 'cities', component: CitiesComponent},
   {path: 'zones', component: ZonesComponent},
+  {path: 'specialite', component: SpecialiteComponent},
+  {path: 'serie', component: SerieComponent},
 
 ];
 
