@@ -13,6 +13,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NearbyComponent } from './nearby/nearby.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { CitiesComponent } from './cities/cities.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { ZonesComponent } from './zones/zones.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     HeaderComponent,
     FilterComponent,
     HomeComponent,
-    NearbyComponent
+    NearbyComponent,
+    CitiesComponent,
+    ZonesComponent,
   ],
   imports: [
     CommonModule,
@@ -31,7 +38,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    BrowserModule,
+    FormsModule, 
+    ReactiveFormsModule, 
+    DropDownListModule,
+    ButtonModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

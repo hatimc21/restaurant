@@ -1,0 +1,8 @@
+<div class="container">
+    <label for="selectville">filtre par ville :</label>
+    <select class="form-select" aria-label="Default select example" id="selectville"
+    ng-model="selectedCountry" ng-options="item as item.country_id for item in data.country track by item.country_id">
+                <option value="">-- choose ville --</option>
+                <option *ngFor="let country of data.country" [ngValue]="country">{{ country.country_id }}</option>
+    </select>
+</div>
