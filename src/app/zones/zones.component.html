@@ -1,0 +1,18 @@
+<div class="container">
+    <label for="selectville">filtre par ville :</label>
+    <select class="form-select" aria-label="Default select example" id="selectville"
+    ng-model="selectedCity" >
+                <option value="">-- choose ville --</option>
+                <option *ngFor="let city of cities" [ngValue]="city.id">{{ city.nom }}</option>
+    </select>
+    <label>{{cities[0].nom}}</label>
+</div>
+<br>
+<div class="container">
+    <label for="selectzone">filtre par zone :</label>
+    <select class="form-select" aria-label="Default select example" id="selectzone"
+    ng-model="selectedZone" >
+            <option value="">-- choose zone --</option>
+            <option *ngFor="let city of zones" [ngValue]="city.id">{{ city.nom }}</option>
+    </select>
+</div>

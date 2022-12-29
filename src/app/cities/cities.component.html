@@ -1,0 +1,9 @@
+<div class="container">
+    <label for="selectville">filtre par ville :</label>
+    <select class="form-select" aria-label="Default select example" id="selectville"
+    ng-model="selectedCity" >
+                <option value="">-- choose ville --</option>
+                <option *ngFor="let city of cities" [ngValue]="city.id">{{ city.nom }}</option>
+    </select>
+    <label>{{selectedCity}}</label>
+</div>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nom": "gueliz",
+        "ville": {
+            "id": 1,
+            "nom": "marrakech"
+        }
+    },
+    {
+        "id": 2,
+        "nom": "massira",
+        "ville": {
+            "id": 1,
+            "nom": "marrakech"
+        }
+    },
+    {
+        "id": 3,
+        "nom": "dawdiat",
+        "ville": {
+            "id": 1,
+            "nom": "marrakech"
+        }
+    }
+]

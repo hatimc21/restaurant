@@ -1,0 +1,8 @@
+<div class="container">
+    <label for="selectville">filtre par serie :</label>
+    <select class="form-select" aria-label="Default select example" id="selectville"
+    ng-model="selectedseries">
+                <option value="">-- choose series --</option>
+                <option *ngFor="let serie of series" [ngValue]="serie.id">{{serie.nom}}</option>
+    </select>
+</div>

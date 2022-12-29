@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "type": "FastFood"
+    },
+    {
+        "id": 2,
+        "type": "Pizza"
+    },
+    {
+        "id": 3,
+        "type": "Tacos"
+    },
+    {
+        "id": 4,
+        "type": "Traditionnel"
+    },
+    {
+        "id": 5,
+        "type": "Italienne"
+    }
+]
