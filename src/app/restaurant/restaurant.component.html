@@ -1,0 +1,37 @@
+<body id="app-restaurant">
+  <div class="beeld"></div>
+    <section class="columnleft">
+      <h1>{{restaurant.restaurant.nom}}</h1>
+      <h2>Description :</h2>
+      <p>{{restaurant.restaurant.description}}</p>
+      <h2>Address :</h2>
+      <p >{{restaurant.restaurant.adresse}}</p>
+      <h2>Opening hours:</h2> 
+      <p>{{ restaurant.restaurant.heure_open }} to {{ restaurant.restaurant.heure_close }} </p>
+      <p>Weekend availability: {{ restaurant.restaurant.weekend ? 'Yes' : 'No' }}</p>
+    </section>
+    <div class="my-google-map" style="width: 50%; height: 50%;"  id="map">
+        <google-map [options]="mapOptions" width="100%" height="100%">
+            <map-marker [position]="marker.position"></map-marker>
+        </google-map>
+    </div>
+    <section class="columnright">
+      <div class="container">
+        <div class="mySlides">
+       
+            <img src="" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+       
+            <img src="" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+        
+            <img src="" style="width:100%">
+        </div>
+      
+
+      </div>
+    </section>

@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(38, 30%, 85%);
+  color: hsl(187, 60%, 25%);
+  font-family: "Lora", serif;
+  line-height: 1.5;
+}
+
+#homepage {
+  background-image: url(https://i.imgur.com/d7eT83W.jpg);
+  background-position: 50% 0;
+}
+
+.beeld {
+  height: 15vh;
+  background-image: url(https://source.unsplash.com/random/600x850?restaurant);
+  background-size: cover;
+  background-position: 0;
+}
+
+nav {
+  background-color: hsla(175, 95%, 30%, 0.25);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > * {
+  color: hsl(240, 30%, 95%);
+  font-size: 1.4em;
+  text-decoration: none;
+  padding: 2.5% 2.5%;
+}
+
+nav img {
+  width: 20%;
+}
+
+nav > *:hover {
+  background-color: hsl(47, 50%, 90%);
+  color: hsl(22, 75%, 55%);
+  text-decoration: underline;
+}
+
+main {
+  margin: 5% 10%;
+}
+
+section {
+  padding: 5%;
+}
+
+section h2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 0.25em;
+  margin-bottom: 1em;
+}
+
+section p {
+  margin-bottom: 2em;
+}
+
+section iframe {
+  border: 0;
+  width: 100%;
+  height: 20em;
+}
+
+section.columnleft {
+  background-color: hsla(85, 50%, 60%, 0.25);
+  width: 60%;
+  float: left;
+}
+
+section.columnright {
+  background-color: hsla(195, 50%, 60%, 0.25);
+  width: 40%;
+  float: right;
+}
+
+section.columnright img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0.2em 0.2em 0.8em rgba(0, 0, 0, 0.2);
+}
+
+section.sitewide {
+  background-color: hsla(55, 30%, 95%, 0.75);
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.gallery {
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.gallery img {
+  display: block;
+  border-radius: 0.25em;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: hsl(187, 50%, 90%);
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 120%;
+  line-height: 2;
+}
+
+footer h2 {
+  margin-bottom: 0.25em;
+}
+
+footer img {
+  padding-right: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav > * {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav img {
+    width: 40%;
+  }
+
+  section.left-column,
+  section.right-column {
+    margin:4px, 4px;
+    padding:4px;
+    background-color: green;
+    width: 500px;
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    
+  }
+
+  .gallery {
+    column-count: 2;
+  }
+
+  .button-25 {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-25:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.button-25:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.button-25:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.button-25:disabled:active {
+  pointer-events: none;
+}
+
+.button-25:disabled:hover {
+  box-shadow: none;
+}
+}
+
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}

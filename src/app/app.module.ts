@@ -20,6 +20,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { ZonesComponent } from './zones/zones.component';
 import { SpecialiteComponent } from './specialite/specialite.component';
 import { SerieComponent } from './serie/serie.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SerieComponent } from './serie/serie.component';
     ZonesComponent,
     SpecialiteComponent,
     SerieComponent,
+    RestaurantComponent,
   ],
   imports: [
     CommonModule,

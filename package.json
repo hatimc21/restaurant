@@ -30,6 +30,7 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "ngx-bootstrap": "^6.2.0",
+    "ngx-link-preview": "^1.1.7",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
