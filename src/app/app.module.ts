@@ -21,6 +21,7 @@ import { ZonesComponent } from './zones/zones.component';
 import { SpecialiteComponent } from './specialite/specialite.component';
 import { SerieComponent } from './serie/serie.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
     SpecialiteComponent,
     SerieComponent,
     RestaurantComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
