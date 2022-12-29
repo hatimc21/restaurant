@@ -1,37 +1,72 @@
-<body id="app-restaurant">
-  <div class="beeld"></div>
-    <section class="columnleft">
-      <h1>{{restaurant.restaurant.nom}}</h1>
-      <h2>Description :</h2>
-      <p>{{restaurant.restaurant.description}}</p>
-      <h2>Address :</h2>
-      <p >{{restaurant.restaurant.adresse}}</p>
-      <h2>Opening hours:</h2> 
-      <p>{{ restaurant.restaurant.heure_open }} to {{ restaurant.restaurant.heure_close }} </p>
-      <p>Weekend availability: {{ restaurant.restaurant.weekend ? 'Yes' : 'No' }}</p>
-    </section>
-    <div class="my-google-map" style="width: 50%; height: 50%;"  id="map">
-        <google-map [options]="mapOptions" width="100%" height="100%">
-            <map-marker [position]="marker.position"></map-marker>
-        </google-map>
-    </div>
-    <section class="columnright">
-      <div class="container">
-        <div class="mySlides">
-       
-            <img src="" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-       
-            <img src="" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-        
-            <img src="" style="width:100%">
-        </div>
-      
+<body>
 
-      </div>
-    </section>
+  <div class="container">
+ 
+   <!-- 1st section -->
+   <section class="row tm-section">
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+     <div class="tm-flex-center p-6 tm-bg-color-primary tm-section-min-h">
+       <h2 class="tm-text-color-white tm-site-name">{{restaurant.restaurant.nom}}</h2>
+     </div>
+   </div>
+   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+     <div class="tm-flex-center p-5">
+       <q class="tm-quote tm-text-color-gray">{{restaurant.restaurant.description}}</q>
+     </div>
+   </div>
+ </section>
+ 
+ <!-- 2nd section -->
+ <section class="row tm-section tm-col-md-reverse">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+       <h2 class="tm-text-color-primary mb-4">Horaire:</h2>
+       <p class="mb-4">de {{ restaurant.restaurant.heure_open }} a {{ restaurant.restaurant.heure_close }}</p>
+     </div>
+   </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+   <div class="tm-flex-center p-5 tm-bg-color-primary">
+     <div class="tm-max-w-400 tm-flex-center tm-flex-col">
+       <img src="assets/zone.jpg" alt="Image" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ </section>
+ 
+ <!-- 3rd Section -->
+ <section class="row tm-section tm-mb-30">
+   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
+    <div class="my-google-map img-fluid" style="width: 90%; height: 80%;"  id="map">
+      <google-map [options]="mapOptions" width="100%" height="100%">
+          <map-marker [position]="marker.position"></map-marker>
+      </google-map>
+  </div>
+   </div>
+   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+     <div class="tm-flex-center p-5">
+       <div class="tm-flex-center tm-flex-col">
+         <h2 class="tm-text-color-primary mb-4">Addresse :</h2>
+         <p>{{restaurant.restaurant.adresse}}</p>
+       </div>
+     </div>
+   </div>
+ </section>
+ 
+ <!-- 4th Section -->
+ <section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+   <div class="tm-flex-center p-5">
+     <div class="tm-md-flex-center">
+      <h2 class="tm-text-color-primary mb-4">week-end :</h2>
+      <p class="mb-4">{{ restaurant.restaurant.weekend ? 'Oui' : 'Non' }}</p>
+    </div>
+  </div>
+ </div>
+ <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-xl-right text-md-center text-center mt-5 mt-lg-0 pr-lg-0">
+  <img src="assets/ville.jpg" alt="Image" class="img-fluid">
+ </div>
+ </section>
+ </div>
+ </body>
