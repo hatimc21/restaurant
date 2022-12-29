@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./serie.component.css']
 })
 export class SerieComponent {
+  restaurants: any;
   series: any;
   selectedseries: any;
 
@@ -14,6 +15,10 @@ export class SerieComponent {
     this.http.get('assets/api/series.json').subscribe(series => {
       this.series = series;
       console.log(series);
+    });
+    this.http.get('assets/api/restaurants.json').subscribe(restaurants => {
+      this.restaurants = restaurants;
+      console.log(restaurants);
     });
   }
 

@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./zones.component.css']
 })
 export class ZonesComponent {
+  restaurants: any;
   cities: any;
   zones:any;
   selectedCity: any;
@@ -21,5 +22,10 @@ export class ZonesComponent {
       this.zones = zones;
       console.log(zones);
     });
+    this.http.get('assets/api/restaurants.json').subscribe(restaurants => {
+      this.restaurants = restaurants;
+      console.log(restaurants);
+    });
   }
-}
+  }
+
