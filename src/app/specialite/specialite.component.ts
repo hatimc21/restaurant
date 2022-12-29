@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-specialite',
@@ -7,14 +8,12 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./specialite.component.css']
 })
 export class SpecialiteComponent {
-  data: any;
-  selectedCountry: any;
-
+  specialities: any;
+  selectedSpecialite: number;
   constructor(private http: HttpClient) {
-    this.http.get('https://api.nationalize.io/?name=nathaniel').subscribe(data => {
-      this.data = data;
-      console.log(data);
+    this.http.get('assets/api/specialites.json').subscribe(specialities => {
+      this.specialities = specialities;
+      console.log(specialities);
     });
   }
-
 }

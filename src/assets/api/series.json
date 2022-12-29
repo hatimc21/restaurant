@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nom": "McDonalds"
+    },
+    {
+        "id": 2,
+        "nom": "KFC"
+    },
+    {
+        "id": 3,
+        "nom": "PIZZA HUT"
+    },
+    {
+        "id": 4,
+        "nom": "BURGER KING"
+    },
+    {
+        "id": 5,
+        "nom": "O'Tacos"
+    },
+    {
+        "id": 6,
+        "nom": "Chez ALI"
+    }
+]

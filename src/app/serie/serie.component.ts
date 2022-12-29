@@ -7,13 +7,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./serie.component.css']
 })
 export class SerieComponent {
-  data: any;
-  selectedCountry: any;
+  series: any;
+  selectedseries: any;
 
   constructor(private http: HttpClient) {
-    this.http.get('https://api.nationalize.io/?name=nathaniel').subscribe(data => {
-      this.data = data;
-      console.log(data);
+    this.http.get('assets/api/series.json').subscribe(series => {
+      this.series = series;
+      console.log(series);
     });
   }
 

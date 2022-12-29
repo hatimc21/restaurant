@@ -7,13 +7,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./cities.component.css']
 })
 export class CitiesComponent {
-  data: any;
-  selectedCountry: any;
+  cities: any;
+  selectedCity: any;
 
   constructor(private http: HttpClient) {
-    this.http.get('https://api.nationalize.io/?name=nathaniel').subscribe(data => {
-      this.data = data;
-      console.log(data);
+    this.http.get('assets/api/villes.json').subscribe(cities => {
+      this.cities = cities;
+      console.log(cities);
     });
   }
   

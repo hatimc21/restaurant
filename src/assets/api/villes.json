@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "nom": "marrakech"
+    },
+    {
+        "id": 2,
+        "nom": "casablanca"
+    },
+    {
+        "id": 3,
+        "nom": "rabat"
+    },
+    {
+        "id": 4,
+        "nom": "agadir"
+    }
+]
